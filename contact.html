@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us - New Hindustan Drillers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+        }
+
+        .header .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .navbar a.active {
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            text-align: center;
+        }
+
+        .contact-info img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .contact-info div + div {
+            margin-left: 20px; /* Add space between contact info items */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <img src="logo.jpg" height="100px" width="180px" alt="Company Logo"></img>
+            <a href="home.html" class="logo">New Hindustan Drillers</a>
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span>(3)</span></a> 
+                <div id="user-btn" class="fa fa-user"></div>
+                <div id="menu-btn" class="fa fa-bars"></div>
+            </div>
+        </section>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, feel free to reach out to us using the form below:</p>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="contact-info">
+            <div>
+                <img src="email-icon.png" alt="Email Icon">
+                <p>Email: newhindustandrillers@gmail.com</p>
+            </div>
+            <div>
+                <img src="map-icon.png" alt="Map Icon">
+                <p>Address: 123 Street, kolhapur</p>
+            </div>
+            <div>
+                <img src="phone-icon.png" alt="Phone Icon">
+                <p>Phone: +1234567890</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
